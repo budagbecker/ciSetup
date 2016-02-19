@@ -1,0 +1,26 @@
+{
+  "name": "cisetup",
+  "version": "1.0.0",
+  "description": "testing ci setup steps",
+  "main": "hello.js",
+  "scripts": {
+    "test": "standard && istanbul cover _mocha -- --recursive test",
+    "test_nocover": "standard && mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mbbecker/ciSetup.git"
+  },
+  "author": "mbbecker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbbecker/ciSetup/issues"
+  },
+  "homepage": "https://github.com/mbbecker/ciSetup#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "standard": "^6.0.7"
+  }
+}
